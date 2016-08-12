@@ -1,5 +1,6 @@
 // get value of timer 
 var time = seconds.innerHTML;
+var bell = document.getElementById("bell");
 var message = "Nice work! Now take a break";
 
 // reset timer to 25 minutes
@@ -25,6 +26,7 @@ function timer() {
     window.clearInterval(update);
     update = undefined;
     time = time - 1;
+    playSound();
     takeBreak();
   } else if (time == 0) {
       time = 59;
@@ -63,4 +65,11 @@ function makeTwoDigit(number) {
 // Renders message at completion of round
 function takeBreak() {
   directions.innerHTML = message;
+}
+
+function playSound() {
+  console.log('automatically invoked')
+  bell.volume = 0.5
+  bell.load()
+  bell.play()
 }
