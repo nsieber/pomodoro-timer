@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+	font-family: "OpenSans", sans-serif;
+	margin-top: 40px;
+	text-align: center;
+}
+#container {
+	display: inline-block;
+	max-width: 380px;
+	padding-bottom: 20px;
+}
+#message {
+	margin: 0 5px;
+}
+button {
+	font-size: 25px;
+	color: white;
+	background-color: orange;
+	padding: 15px 20px;
+	border-style: none;
+	border-radius: 5px;
+}
+#timer-face {
+	background: rgba(153, 204, 255, 0.5);
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 25px;
+	margin: 25px 5px;
+}
+
+#resets {
+}
+
+#resets button {
+	margin: 10px 10px;
+}
+
+#timer {
+	font-size: 100px;
+	font-weight: bold;
+}
+
+#minutes {
+	display: inline;
+	margin-right: -20px;
+}
+
+#colon {
+	display: inline;
+}
+
+#seconds {
+	display: inline;
+	margin-left: -20px;
+}
+
+#playButtons {
+margin-top: 10px;
+}
+
+#playButtons button {
+	width: 200px;
+}
+
+.timer {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
