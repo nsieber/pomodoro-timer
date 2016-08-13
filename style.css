@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 body {
 	font-family: "OpenSans", sans-serif;
 	margin-top: 40px;
@@ -28,11 +27,19 @@ button {
 	padding-bottom: 25px;
 	margin: 25px 5px;
 }
+#pomodoro-buttons {
+	display: inline-block;
+}
+#break-buttons {
+	display: inline-block;
+}
 
 #resets button {
 	margin: 10px 10px;
 }
-
+.adjusters div {
+	display: inline-block;
+}
 #timer {
 	font-size: 100px;
 	font-weight: bold;
