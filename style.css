@@ -57,6 +57,7 @@ button {
 	margin: 0 2px;
 }
 #timer {
+	margin: -10px;
 	font-size: 100px;
 	font-weight: bold;
 }
