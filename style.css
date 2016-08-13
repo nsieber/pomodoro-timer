@@ -19,6 +19,7 @@ button {
 	padding: 15px 20px;
 	border-style: none;
 	border-radius: 5px;
+	border: solid 2px #E59400;
 }
 #timer-face {
 	background: rgba(153, 204, 255, 0.5);
@@ -26,19 +27,34 @@ button {
 	padding-top: 10px;
 	padding-bottom: 25px;
 	margin: 25px 5px;
+	border: solid 2px rgba(153, 204, 255, 1);
 }
 #pomodoro-buttons {
 	display: inline-block;
+	margin-right: 4px;
 }
 #break-buttons {
 	display: inline-block;
+	margin-left: 4px;
 }
-
 #resets button {
-	margin: 10px 10px;
+	margin: 13px 10px;
 }
 .adjusters div {
+	margin-top: 10px;
 	display: inline-block;
+}
+#pomodoro-plus, #pomodoro-minus, 
+#break-plus, #break-minus {
+	color: white;
+	background-color: orange;
+	width: 16px; 
+	padding: 2px;
+	border-radius: 3px;
+	border: solid 2px #E59400;
+}
+.set-label {
+	margin: 0 2px;
 }
 #timer {
 	font-size: 100px;
