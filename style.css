@@ -20,6 +20,10 @@ button {
 	border-style: none;
 	border-radius: 5px;
 }
+button:hover {
+	color: #fffcfc;
+	background-color: #f0a500;
+}
 #timer-face {
 	background: rgba(153, 204, 255, 0.5);
 	border-radius: 10px;
@@ -52,6 +56,14 @@ button {
 }
 #pomodoro-minus, #break-minus {
 	font-weight: bold;
+}
+#pomodoro-plus:hover, #pomodoro-minus:hover, 
+#break-plus:hover, #break-minus:hover {
+	background-color: #f0a500;
+	color: #fffcfc;
+}
+.adjusters:hover {
+	cursor: default;
 }
 .set-label {
 	margin: 0 2px;
