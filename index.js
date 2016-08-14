@@ -2,23 +2,8 @@
 var time = seconds.innerHTML;
 var bell = document.getElementById("bell");
 var message = "Nice work! Now take a break";
+var session = 25, breakTime = 5;
 
-// reset timer to 25 minutes
-resetRound.onclick = function() {
-  stopTimer();
-  minutes.innerHTML = 25;
-  seconds.innerHTML = makeTwoDigit(0);
-  time = 0;
-  message = "Nice work! Now take a break";
-}
-// reset timer to 5 minutes
-resetBreak.onclick = function() {
-  stopTimer();
-  minutes.innerHTML = makeTwoDigit(5);
-  seconds.innerHTML = makeTwoDigit(0);
-  time = 0;
-  message = "Click Pomodoro button to start another round";
-}
 
 // start timer function
 function timer() {
@@ -60,6 +45,48 @@ function makeTwoDigit(number) {
     return "0" + number;
   }
   return number;
+}
+
+// add one minute to session length
+function sessionPlusMinute() {
+  session += 1;
+  resetSession();
+}
+
+// add one minute to break length
+function breakPlusMinute() {
+  breakTime += 1;
+  resetBreak();
+}
+
+// subtract one minute from session length
+function sessionMinusMinute() {
+  session -= 1;
+  resetSession();
+}
+
+// substract one minute from break length
+function breakMinusMinute() {
+  breakTime -= 1;
+  resetBreak();
+}
+
+// reset timer to 25 minutes
+function resetSession() {
+  stopTimer();
+  minutes.innerHTML = makeTwoDigit(session);
+  seconds.innerHTML = makeTwoDigit(0);
+  time = 0;
+  message = "Nice work! Now take a break";
+}
+
+// reset timer to 5 minutes
+function resetBreak() {
+  stopTimer();
+  minutes.innerHTML = makeTwoDigit(breakTime);
+  seconds.innerHTML = makeTwoDigit(0);
+  time = 0;
+  message = "Click Pomodoro button to start another round";
 }
 
 // Renders message at completion of round

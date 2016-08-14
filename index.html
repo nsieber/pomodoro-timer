@@ -16,19 +16,19 @@
     <div id="resets">
       <div id="pomodoro-buttons">
         <div class="adjusters">
-          <div id="pomodoro-plus">+</div>
+          <div id="pomodoro-plus" onclick="sessionPlusMinute()">+</div>
           <div class="set-label">set session</div>
-          <div id="pomodoro-minus">-</div>
+          <div id="pomodoro-minus" onclick="sessionMinusMinute()">-</div>
         </div>
-        <button id="resetRound">Session</button>
+        <button id="resetRound" onclick="resetSession()">Session</button>
       </div>
       <div id="break-buttons">
         <div class="adjusters">
-          <div id="break-plus">+</div>
+          <div id="break-plus" onclick="breakPlusMinute()">+</div>
           <div class="set-label">set break</div>
-          <div id="break-minus">-</div>
+          <div id="break-minus" onclick="breakMinusMinute()">-</div>
         </div>
-        <button id="resetBreak">Break</button>
+        <button id="resetBreak" onclick="resetBreak()">Break</button>
       </div>
     </div>
     <div id="timer">
