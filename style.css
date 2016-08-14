@@ -62,23 +62,27 @@ button:hover {
 	background-color: #f0a500;
 	color: #fffcfc;
 }
+#reset-value { 
+}
+#break-reset-value { 
+	display: block; 
+}
+/* to stop text cursor from appearing */
 .adjusters:hover {
 	cursor: default;
 }
 .set-label {
-	margin: 0 2px;
+	display: block;
 }
 #timer {
 	margin: -10px;
 	font-size: 100px;
 	font-weight: bold;
 }
-
 #minutes {
 	display: inline;
 	margin-right: -20px;
 }
-
 #colon {
 	display: inline;
 }
@@ -87,15 +91,12 @@ button:hover {
 	display: inline;
 	margin-left: -20px;
 }
-
 #playButtons {
 margin-top: 10px;
 }
-
 #playButtons button {
 	width: 200px;
 }
-
 .timer {
     -webkit-animation-name: pulse;
     animation-name: pulse;
