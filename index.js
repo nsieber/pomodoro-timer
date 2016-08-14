@@ -3,7 +3,8 @@ var time = seconds.innerHTML;
 var bell = document.getElementById("bell");
 var message = "Nice work! Now take a break";
 var session = 25, breakTime = 5;
-
+var sessionValue = document.getElementById('reset-value');
+var breakValue = document.getElementById('break-reset-value');
 
 // start timer function
 function timer() {
@@ -50,25 +51,25 @@ function makeTwoDigit(number) {
 // add one minute to session length
 function sessionPlusMinute() {
   session += 1;
-  resetSession();
-}
-
-// add one minute to break length
-function breakPlusMinute() {
-  breakTime += 1;
-  resetBreak();
+  sessionValue.innerHTML = session;
 }
 
 // subtract one minute from session length
 function sessionMinusMinute() {
   session -= 1;
-  resetSession();
+  sessionValue.innerHTML = session;
+}
+
+// add one minute to break length
+function breakPlusMinute() {
+  breakTime += 1;
+  breakValue.innerHTML = breakTime;
 }
 
 // substract one minute from break length
 function breakMinusMinute() {
   breakTime -= 1;
-  resetBreak();
+  breakValue.innerHTML = breakTime;
 }
 
 // reset timer to 25 minutes
