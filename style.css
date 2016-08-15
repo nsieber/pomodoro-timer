@@ -24,6 +24,9 @@ button:hover {
 	color: #fffcfc;
 	background-color: #f0a500;
 }
+button:focus, input[type="button"]:focus {
+    outline: none;
+}
 #timer-face {
 	background: rgba(153, 204, 255, 0.5);
 	border-radius: 10px;
