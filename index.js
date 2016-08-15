@@ -10,10 +10,11 @@ var breakValue = document.getElementById('break-reset-value');
 function timer() {
   if (time == 1 && minutes.innerHTML == 0) {
     window.clearInterval(update);
+    // reset update variable so that timer can be started again
     update = undefined;
     time = time - 1;
     playSound();
-    takeBreak();
+    showMessage();
   } else if (time == 0) {
       time = 59;
       minutes.innerHTML = makeTwoDigit(minutes.innerHTML - 1);
@@ -91,7 +92,7 @@ function resetBreak() {
 }
 
 // Renders message at completion of round
-function takeBreak() {
+function showMessage() {
   directions.innerHTML = message;
 }
 
