@@ -25,7 +25,7 @@ function timer() {
 }
 
 // Start or stop the timer depending on state
-startStop.onclick = function() {
+function startStop() {
   if (typeof(update) == 'undefined') {
     update = setInterval("timer()", 1000)
   } else {
