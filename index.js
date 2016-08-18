@@ -97,7 +97,6 @@ function showMessage() {
 }
 
 function playSound() {
-  console.log('automatically invoked')
   bell.volume = 0.5
   bell.load()
   bell.play()
